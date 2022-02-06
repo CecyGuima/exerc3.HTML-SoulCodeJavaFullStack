@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+
+<body>
+    <h1>Registro de Usuário</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome.." required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" placeholder="Digite seu sobrenome.." required>
+
+            <label for="CPF">CPF</label>
+            <input type="text" id="CPF" placeholder="Digite o número.." required>
+        </fieldset> 
+        <br>
+
+        <fieldset>
+            <label for="sexo">Sexo</label>
+            <select id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="O">Outro</option>
+            </select>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" placeholder="20" min="18" max="90">
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" name="date" id="nascimento">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Login</legend>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite um e-mail.." required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite uma senha.." minlength="6" maxlength="10" required>
+        </fieldset>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+        <button type="submit">Resetar fomulário</button>
+
+    </form>
+</body>
+
+</html>
